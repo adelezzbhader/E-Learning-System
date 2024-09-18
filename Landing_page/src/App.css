@@ -1,7 +1,22 @@
+
+:root{
+ --light_blue:#6b95c1;
+ --Light_Mint_Green :#B2E7C9 ;         
+ --Light_Gray:#EDEDED;
+ --baby_blue :#BFD3FE;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 *{
 
   box-sizing: border-box;
   font-size: 14px;
+}
+body{
+  background: var(--Light_Gray);
 }
 
 header{
@@ -15,10 +30,15 @@ header{
   width: 100%;
   left: 0px;
   top: 0px;
-  background: #6b95c1;
+  background:var(--light_blue);
   border-bottom: 1px solid #BFD3FE;
   padding-left: 20px;
   color: #fff;
+}
+
+.logo{
+  width:90px;
+  border-radius: 70px;
 }
 
 #first-nav ul li a{
@@ -59,7 +79,7 @@ header{
   width: 0%;
   height: 2px;
   transition:0.5s ;
-  background: #fff;
+  background: var(--Light_Gray);
   display: block;
   margin: auto;
   cursor: pointer;
@@ -71,60 +91,10 @@ header{
  width: 80%;
 }
 
-
-
-
-#second-nav ul li a{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: #fff;
-  list-style: none;
-}
-
-#second-nav ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-
-}
-
-#second-nav ul li {
-  position: relative;
-}
-
-#second-nav ul li a {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: #fff;
-  padding: 10px 15px;
-  transition: color 0.3s, background-color 0.3s;
-  font-weight: 500;
-}
-
-#second-nav ul li::after {
-  content: '';
-  width: 0%;
-  height: 2px;
-  transition:0.5s ;
-  background: #fff;
-  display: block;
-  margin: auto;
-  cursor: pointer;
-  text-decoration: underline;
-
-  
-}
-#second-nav   ul li:hover::after {
- width: 80%;
-}
-
 .navs{
   display: flex;
   list-style: none;
+  padding-left: 50px;
 }
 
 
@@ -134,7 +104,7 @@ header{
   cursor: pointer;
   justify-content: space-evenly;
   padding: 10px 20px;
-  background: #BFD3FE;
+  background: var(--baby_blue);
   border-radius: 30px;
   align-items: center;
   box-shadow: 0 10px 25px rgba(0,0,0,0,0.3);
@@ -194,7 +164,7 @@ header{
   grid-column: 2/3;
   margin-left: 620px;
   margin-top: -80px;
-  
+  margin-bottom: 101px;
 
 }
 
@@ -210,7 +180,7 @@ header{
   transition: all .8s;
   cursor: pointer;
   position: relative;
-  background: #6b95c1;
+  background:var(--light_blue);
   overflow: hidden;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  
@@ -221,7 +191,7 @@ header{
   position: absolute;
   top: 0;
   background: #fffdfd;
-  color:#6b95c1;
+  color:var(--light_blue);
   width: 100%;
   height: 100%;
   display: flex;
@@ -252,4 +222,6 @@ header{
 .button:hover .box:before {
   transform: translateY(0);
 }
+
+/************************************************ Media queries ******************************/
 

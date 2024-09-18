@@ -1,22 +1,24 @@
-.course{
+.container .course{
     margin-top: 150px;
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
-    grid-template-rows: repeat(3,minmax(100px, 1fr));
-    gap: 200px;
+    grid-template-columns: repeat(3, minmax(300px, 1fr)); 
+    grid-template-rows:  1fr 1fr 1fr ;
+    column-gap: 100px;
+    row-gap: 250px;
 
 }
 
-.course h1{
+.container .course h1{
     grid-column: 1/-1;
     color:#5a7da2;
     text-shadow: 2px 2px#98b8db;
+    font-size: 50px;
 }
 
 
 
-.card {
+.container .card {
     position: relative;
     display: flex;
     align-items: center;
@@ -24,11 +26,11 @@
     width: 350px;
     border-radius: 24px;
     line-height: 1.6;
-    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-    margin-top: -200px;
-    margin-bottom: 100px;
+    transition: transform 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    margin-top: -300px;
+    margin-bottom: 150px;
     margin-left: 10px;
-   text-align: left;
+    text-align: left;
 }
   
 .content {
@@ -108,6 +110,7 @@
   
 .card:hover {
     transform: translate(0px, -16px);
+    filter: drop-shadow(0 5px 5px #ffffff);
 }
   
 .card:hover .content::before {

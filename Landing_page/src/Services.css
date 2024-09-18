@@ -1,0 +1,52 @@
+:root{
+    --light_blue:#6b95c1;
+    --Light_Mint_Green :#B2E7C9 ;         
+    --Light_Gray:#EDEDED;
+    --baby_blue :#BFD3FE;
+}
+   
+.services {
+    background-color: var(--light_blue);
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--Light_Gray);
+    margin-bottom: 250px;
+  }
+  
+  .services h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .service-item {
+    background: var(--baby_blue);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    color: #666;
+  }
+  
+  .service-icon {
+    color: var(--light_blue);
+    margin-bottom: 15px;
+  }
+  
+  .service-item h3 {
+    margin: 10px 0;
+    font-size: 1.25rem;
+  }
+  
+  .service-item p {
+    color: #666;
+    font-size: 0.875rem;
+  }
+  

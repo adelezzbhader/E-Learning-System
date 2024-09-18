@@ -15,12 +15,13 @@ function Courses() {
     return(
         <>   
 
+         <div className="container" >
 
-           
-          <div className="course">
+              
+          <div className="course" id="Courses">
             <h1>Our Courses</h1>
 
-            <div className="card card1">
+            <div className="card card1" data-aos="fade-up" > 
              <div className="content">
              <div className=' iconf'>
                     <FaJava/>
@@ -36,7 +37,7 @@ function Courses() {
 
 
 
-          <div className="card card2">
+          <div className="card card2" data-aos="fade-up" >
              <div className="content">
              <div className=' iconf'>
                     <GrReactjs/>
@@ -51,7 +52,7 @@ function Courses() {
 
 
 
-          <div className="card card3">
+          <div className="card card3" data-aos="fade-up">
              <div className="content">
                <div className=' iconf'>
                     <GiStairsGoal/>
@@ -65,7 +66,7 @@ function Courses() {
 
 
 
-          <div className="card card4">
+          <div className="card card4" data-aos="fade-up">
              <div className="content">
                <div className=' iconf'>
                     <FaMobileScreen/>
@@ -79,7 +80,7 @@ function Courses() {
 
 
 
-          <div className="card card5">
+          <div className="card card5" data-aos="fade-up">
              <div className="content">
              <div className=' iconf'>
                     <GiWeightLiftingUp />
@@ -93,7 +94,7 @@ function Courses() {
 
 
 
-          <div className="card card6">
+          <div className="card card6" data-aos="fade-up">
              <div className="content">
                 <div className=' iconf'>
                     <SiHtmx />
@@ -110,6 +111,9 @@ function Courses() {
 
           </div>
         
+
+         </div>
+          
         
         
         

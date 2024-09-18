@@ -76,11 +76,11 @@
 /*------------------------------------- image---------------------------------*/
 
 #img-section1 {
-  width: 400px;
-  height: auto; /* Keeps the aspect ratio */
+  width: 400px !important;
+  /* height: auto;  */
   animation: fade-in-out 5s ease infinite;
   grid-column: 2/3;
-  margin-top: 30px;
+  margin-top: 80px;
   cursor: pointer;
   filter: drop-shadow(0 5px 2px #496685 );
   margin-left: -50px;
@@ -94,15 +94,15 @@
 
 @keyframes fade-in-out {
   0% {
-    opacity: 0;  /* Image starts fully visible */
+    opacity: 0;  
     transform: translateY(0);
   }
   50% {
-    opacity: 1;  /* Image fades out */
+    opacity: 1;  
     transform: translateY(-20px); 
   }
   100% {
-    opacity: 1;  /* Image fades back in */
+    opacity: 1;  
     transform: translateY(0);
   }
 }
@@ -110,7 +110,6 @@
 
 
 /*--------------------------------------------------------------------------------------*/
-
 
 .box1 {
   width: 140px;
@@ -127,6 +126,7 @@
   text-transform: uppercase;
   font-weight: 900;
   border-radius: 10px;
+  border-bottom: solid #6b95c1;
 }
 
 .box1:before {

@@ -1,0 +1,136 @@
+/* Global Styles */
+html {
+  font-size: 100%; /* Base font size for scalability (16px) */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem; 
+  line-height: 1.6;
+}
+
+
+header {
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer {
+  padding: 20px 15px;
+  font-size: 0.875rem; /* Slightly smaller text on mobile */
+}
+
+img {
+  width: 100%; /* Full width on mobile */
+  max-width: 100%;
+}
+
+button {
+  width: 90%; /* Wider buttons on mobile */
+  font-size: 1rem;
+  padding: 12px;
+}
+
+/* Tablet View */
+@media (min-width: 768px) {
+  header {
+      padding: 20px 40px;
+      font-size: 1.2rem; /* Slightly larger text */
+  }
+
+  nav {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .footer {
+      padding: 30px 20px;
+      font-size: 1rem;
+  }
+
+  img {
+      width: 80%; /* Slightly narrower image on tablets */
+      margin: 0 auto;
+  }
+
+  button {
+      width: 70%; /* Buttons get narrower */
+      font-size: 1.1rem;
+      padding: 14px;
+  }
+}
+
+/* Desktop View */
+@media (min-width: 1025px) {
+  header {
+      padding: 30px 60px;
+      font-size: 1.4rem;
+  }
+
+  nav {
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
+  .footer {
+      padding: 40px 60px;
+      font-size: 1.1rem;
+  }
+
+  img {
+      width: 60%; /* Constrain image size on larger screens */
+      margin: 0 auto;
+  }
+
+  button {
+      width: 40%; /* Smaller buttons on desktop */
+      font-size: 1.2rem;
+      padding: 16px;
+  }
+}
+
+
+/* Mobile (Default) */
+.footer {
+  padding: 20px 10px;
+  font-size: 0.9rem;
+}
+
+.footer-links ul {
+  padding-left: 0;
+  text-align: center; /* Centered links for mobile */
+}
+
+/* Tablet View */
+@media (min-width: 768px) {
+  .footer {
+      padding: 30px 20px;
+      font-size: 1rem;
+  }
+
+  .footer-links ul {
+      padding-left: 20px;
+  }
+}
+
+/* Desktop View */
+@media (min-width: 1025px) {
+  .footer {
+      padding: 40px 60px;
+      font-size: 1.1rem;
+  }
+
+  .footer-links ul {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 0;
+  }
+}

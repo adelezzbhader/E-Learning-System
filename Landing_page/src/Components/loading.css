@@ -1,11 +1,22 @@
-
 .loader {
     position: relative;
     width: 75px;
     height: 100px;
-  }
+    margin-left: 700px;
+    margin-top: -100px;
+}
+
+#load_span{
+    position: absolute;
+    top: 60%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
   
-  .loader__bar {
+.loader__bar {
     position: absolute;
     bottom: 0;
     width: 10px;
@@ -13,7 +24,7 @@
     background: rgb(0, 0, 0);
     transform-origin: center bottom;
     box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
-  }
+}
   
   .loader__bar:nth-child(1) {
     left: 0px;
@@ -184,7 +195,7 @@
     }
   }
   
-  @-webkit-keyframes barUp2 {
+@-webkit-keyframes barUp2 {
     0% {
       transform: scale(1, 0.4);
     }
@@ -204,9 +215,9 @@
     100% {
       transform: scale(1, 0.4);
     }
-  }
+}
   
-  @keyframes barUp2 {
+@keyframes barUp2 {
     0% {
       transform: scale(1, 0.4);
     }
@@ -226,9 +237,9 @@
     100% {
       transform: scale(1, 0.4);
     }
-  }
+}
   
-  @-webkit-keyframes barUp3 {
+@-webkit-keyframes barUp3 {
     0% {
       transform: scale(1, 0.6);
     }
@@ -236,9 +247,9 @@
     100% {
       transform: scale(1, 0.6);
     }
-  }
+}
   
-  @keyframes barUp3 {
+@keyframes barUp3 {
     0% {
       transform: scale(1, 0.6);
     }
@@ -246,31 +257,9 @@
     100% {
       transform: scale(1, 0.6);
     }
-  }
+}
   
-  @-webkit-keyframes barUp4 {
-    0% {
-      transform: scale(1, 0.8);
-    }
-  
-    40% {
-      transform: scale(1, 0.8);
-    }
-  
-    50% {
-      transform: scale(1, 0.4);
-    }
-  
-    90% {
-      transform: scale(1, 0.4);
-    }
-  
-    100% {
-      transform: scale(1, 0.8);
-    }
-  }
-  
-  @keyframes barUp4 {
+@-webkit-keyframes barUp4 {
     0% {
       transform: scale(1, 0.8);
     }
@@ -290,9 +279,31 @@
     100% {
       transform: scale(1, 0.8);
     }
-  }
+}
   
-  @-webkit-keyframes barUp5 {
+@keyframes barUp4 {
+    0% {
+      transform: scale(1, 0.8);
+    }
+  
+    40% {
+      transform: scale(1, 0.8);
+    }
+  
+    50% {
+      transform: scale(1, 0.4);
+    }
+  
+    90% {
+      transform: scale(1, 0.4);
+    }
+  
+    100% {
+      transform: scale(1, 0.8);
+    }
+}
+  
+@-webkit-keyframes barUp5 {
     0% {
       transform: scale(1, 1);
     }
@@ -312,9 +323,9 @@
     100% {
       transform: scale(1, 1);
     }
-  }
+}
   
-  @keyframes barUp5 {
+@keyframes barUp5 {
     0% {
       transform: scale(1, 1);
     }
@@ -334,4 +345,4 @@
     100% {
       transform: scale(1, 1);
     }
-  }
+}
