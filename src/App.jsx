@@ -7,6 +7,7 @@ import CourseBack from './Components/CourseBack';
 import CourseBeginners from './Components/CourseBeginners';
 import CourseJava from './Components/CourseJava';
 import CourseMobile from './Components/CourseMobile';
+import LoginSignupForm from './Components/LoginSignupForm';
 
 
 function App() {
@@ -14,8 +15,8 @@ function App() {
   return (
     <>
     <div className="App">
-      {/* <LoginSignupForm /> */}
-      <CoursesFront />
+      <LoginSignupForm />
+      {/* <CoursesFront /> */}
       {/* <CourseReact /> */}
       {/* <CourseBack  /> */}
       {/* <CourseBeginners  /> */}
